@@ -1,0 +1,17 @@
+{
+  "name": "thumbning",
+  "version": "0.0.0",
+  "homepage": "https://github.com/anderson-mota/thumbning",
+  "authors": [
+    "Anderson Mota <anderson.mota@lqdi.net>"
+  ],
+  "main": "public/js/main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
