@@ -1,18 +1,20 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="app">
 <head>
     <title>Thumbning</title>
 </head>
 <body>
-    <div>
-        {% verbatim %}
-        <label>Name:</label>
-        <input type="text" ng-model="yourName" placeholder="Enter a name here">
-        <hr>
-        <h1>Hello {{yourName}}!</h1>
-        {% endverbatim %}
-    </div>
+{% verbatim %}
 
-    <script src="assets/js/vendor.js"></script>
+<main ng-controller="Main">
+    <form class="dropzone" method="post" enctype="multipart/form-data" dropzone="dropzoneConfig">
+        <input name="file" type="file" multiple />
+    </form>
+</main>
+
+{% endverbatim %}
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
