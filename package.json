@@ -1,6 +1,6 @@
 {
   "name": "thumbning",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "public/js/main.js",
   "scripts": {
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/anderson-mota/thumbning/issues"
   },
-  "homepage": "https://github.com/anderson-mota/thumbning"
+  "homepage": "https://github.com/anderson-mota/thumbning",
+  "devDependencies": {
+    "wiredep": "^3.0.0-beta",
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.4.0",
+    "gulp-concat": "^2.6.0"
+  }
 }
