@@ -2,6 +2,7 @@
 <html ng-app="app">
 <head>
     <title>Thumbning</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 {% verbatim %}
@@ -16,5 +17,11 @@
 
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>
+
+{% if app.debug %}
+<script type="text/javascript">
+    document.write('<script src="//localhost:35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+</script>
+{% endif %}
 </body>
 </html>

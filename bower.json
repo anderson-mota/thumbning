@@ -17,6 +17,12 @@
   "dependencies": {
     "angular": "~1.4.5",
     "dropzone": "~4.0.1",
+    "foundation": "~5.5.2",
     "jquery": "~2.1.4"
+  },
+  "overrides": {
+    "foundation": {
+      "main": ["scss/foundation.scss", "js/foundation.js"]
+    }
   }
 }
