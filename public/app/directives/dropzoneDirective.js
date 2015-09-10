@@ -7,7 +7,7 @@
  *
  * @restrict A
  * */
-angular.module('app', [])
+angular.module('app')
     .directive('dropzone', function () {
         return {
             restrict: 'A',
