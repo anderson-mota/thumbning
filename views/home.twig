@@ -2,18 +2,27 @@
 <html ng-app="app">
 <head>
     <title>Thumbning</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-{% verbatim %}
 
-<main ng-controller="MainController">
-    <form class="dropzone" method="post" enctype="multipart/form-data" dropzone="dropzoneConfig">
-        <input name="file" type="file" multiple />
-    </form>
-</main>
+<header>
+    <nav class="navbar navbar-dark bg-inverse">
+        <a class="navbar-brand" href="#">Thumbning</a>
+    </nav>
+</header>
 
-{% endverbatim %}
+<div class="container">
+    {% verbatim %}
+    <main ng-controller="MainController" class="row">
+        <div class="col-lg-12">
+            <form class="dropzone jumbotron" method="post" enctype="multipart/form-data" dropzone="dropzoneConfig"></form>
+        </div>
+    </main>
+    {% endverbatim %}
+</div>
 
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>

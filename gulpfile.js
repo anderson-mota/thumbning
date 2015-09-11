@@ -5,6 +5,8 @@ var wiredep = require('wiredep');
 var watch   = require('gulp-watch');
 var livereload = require('gulp-livereload');
 var compass = require('gulp-compass');
+var minifyCss = require('gulp-minify-css');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('compress-vendor', function() {
     return gulp.src(wiredep().js)
@@ -18,6 +20,15 @@ gulp.task('compress', function() {
         .pipe(concat('app.js'))
         .pipe(uglify())
         .pipe(gulp.dest('public/assets/js'));
+});
+
+gulp.task('style-vendor', function() {
+    console.log(wiredep().css);
+    return gulp.src(wiredep().css)
+        .pipe(concat('vendor.css'))
+        .pipe(minifyCss())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('public/assets/css'));
 });
 
 gulp.task('compass', function() {
