@@ -18,7 +18,7 @@ angular.module('app', []).controller('MainController', ['$scope', function($scop
 
             },
             'success': function (file, response) {
-
+                console.log(file, response);
             }
         }
     }
