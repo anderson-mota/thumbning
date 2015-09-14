@@ -95,3 +95,4 @@ node_modules
 
 composer.lock
 bower_components
+public/data
