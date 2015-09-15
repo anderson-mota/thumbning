@@ -20,6 +20,12 @@
         <div class="col-lg-12">
             <form class="dropzone jumbotron" method="post" enctype="multipart/form-data" dropzone="dropzoneConfig"></form>
         </div>
+        <div class="col-lg-12">
+            <figure ng-repeat="file in files">
+                <img ng-src="{{file.path}}" alt="{{file.name}}" width="150">
+                <figcaption><a ng-href="/download/{{file.name}}">Download</a> - {{file.name}}</figcaption>
+            </figure>
+        </div>
     </main>
     {% endverbatim %}
 </div>

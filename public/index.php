@@ -35,7 +35,6 @@ $app->post('/upload', function() use ($app) {
     }
 
     return $app->json(['status' => 'tra_success', 'file' => $file_info]);
-
 });
 
 $app->run();
